@@ -1,4 +1,4 @@
-FROM python:3.6.4-alpine3.7
+FROM python:3.7.0-alpine3.8
 
 # Install python packages
 ADD requirements.txt requirements.txt
@@ -14,4 +14,4 @@ USER exporter
 
 # NOTE: the "-u" switch disables output buffering (so output will be
 #       flush immediately)
-CMD python3.6 -u /fake_exporter.py $POD_NAMESPACE $POD_NAME
+CMD python3.7 -u /fake_exporter.py $POD_NAMESPACE $LABEL_NAME $LABEL_VALUE $VALUE_HTTP_ENDPOINT
