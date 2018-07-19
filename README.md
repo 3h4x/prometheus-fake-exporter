@@ -45,7 +45,7 @@ spec:
         - name: LABEL_VALUE
           value: prometheus-fake-exporter
         - name: VALUE_HTTP_ENDPOINT
-          value: whttps://gist.githubusercontent.com/3h4x/38ba057db9cbb80c7bf8ad768a90d086/raw/value
+          value: https://gist.githubusercontent.com/3h4x/38ba057db9cbb80c7bf8ad768a90d086/raw/value
         - name: POD_NAMESPACE
           valueFrom:	
             fieldRef:	
